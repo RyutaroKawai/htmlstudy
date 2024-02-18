@@ -1,0 +1,579 @@
+@charset "UTF-8";
+/* 共通部分
+-----------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------
+*/
+html {
+    font-size: 100%;
+}
+body {
+    /* font-familyを指定する */
+        font-style: normal;
+        line-height: 1.7;
+        color: #000000;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+/* フッター */
+.absolute-container {
+    position: relative;
+    padding-bottom: 5px;
+    min-height: 100vh;
+}
+.absolute-footer {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+footer {
+    background: #f5f5f7;
+    text-align: center;
+    padding: 20px 0;
+    vertical-align: top;
+    margin: 0;
+    /* position: absolute; */
+    /* bottom: 0;
+    left: 0;
+    width: 100%; */
+}
+footer p {
+    color: #767677;
+    font-size: 0.875rem;
+}
+.wrapper {
+    max-width: 1100px;
+    margin: auto auto;
+    padding: 0 4%;
+}
+/* HEADER */
+.page-header {
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    width: 20px;
+    margin-top: 14px;
+}
+.main-nav{
+    display: flex;
+    font-size: 0.85rem;
+    /* text-transform: uppercase; */
+    margin-top: 14px;
+    list-style: none;
+}
+.main-nav li {
+    margin-left: 36px;
+}
+.main-nav a {
+    color: #000000;
+    .roboto-bold {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+}
+.main-nav a:hover {
+    color: #000;
+}
+
+
+/* HOME(index)
+-----------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------
+ */
+#home{
+    background-image: url(../images/heroimage.jpg);
+    min-height: 100vh;
+}
+ /* home-content_wrapper */
+.home-content {
+    margin-top: 15%;
+    color: #ffffff;
+    text-align: center;
+}
+.home-content p {
+    font-size: 180%;
+    margin: 0 auto;
+    margin-bottom: 2%;
+    font-weight: 600;
+}
+/* 見出し */
+.hero {
+    font-size: 200%;
+}
+.page-title {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-size: 400%;
+    font-weight: 400;
+}
+/* ボタン */
+.button {
+    color: #ff5a00;
+    text-decoration: none;
+    /* font-weight: bold; */
+}
+.button:hover {
+    color: #ff5a00;
+    text-decoration: underline;
+}
+/* hero画像 */
+.big-bg {
+    background-size: cover;
+    background-position: center top;
+}
+.page-title {
+    text-transform: none;
+}
+
+/* NEWS
+-----------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------
+*/
+#news {
+    /* background-image: url(../images/news-bg.png); */
+    /* background-size: cover;　　background-image には object-fit プロパティは直接適用できない　 */
+    background-image: url(../images/news.jpg);
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    background-position: center center;
+    background-position: top;
+
+.page-title_news {
+    margin-top: 20px;
+    text-align: left;
+    .roboto-regular {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    font-size: 500%;
+}
+}
+/* 記事部分
+------------------------------------------ */
+article {
+    width: 74%;
+    order: 2;
+    margin: 0 60px 60px;
+    margin-top: -80px;
+}
+.news-contents {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.post-info {
+    position: relative;
+    padding-top: 130px;
+    margin-bottom: 40px;
+    .roboto-bold {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+}
+.post-date {
+    background: #000;
+    border-radius: 50%;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    font-size: 1.2rem;
+    text-align: center;
+    position: absolute;
+    top: 140px;
+    padding-top: 16px;
+}
+.post-date span {
+    font-size: 1rem;
+    border-top: 1px rgba(255,255,255,.5) solid;
+    padding-top: 6px;
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+}
+.post-title {
+    .roboto-regular {
+        font-family: "Roboto", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+    }
+    font-size: 3rem;
+    font-weight: normal;
+    margin-left: 120px;
+    text-decoration: none;
+}
+/*
+.post-title:hover {
+    text-decoration: underline;
+} */
+.post-cat {
+    margin-left: 120px;
+}
+.image-description {
+    font-size: 85%;
+    text-align: center;
+}
+article p {
+    margin-bottom: 1rem;
+}
+/* サイドバー
+------------------------------------------ */
+aside {
+    width: 22%;
+    padding-top: 130px;
+    order: 3;
+}
+aside p {
+    padding: 12px 10px;
+}
+.sub-title {
+    font-size: 1.375rem;
+    padding: 0 8px 8px;
+    border-bottom: 2px #767677 solid;
+    font-weight: normal;
+}
+.sub-menu {
+    margin-bottom: 60px;
+    list-style: none;
+}
+.sub-menu li {
+    border-bottom: 1px #ddd solid;
+}
+.sub-menu a {
+    color: #000;
+    padding: 10px;
+    display: block;
+}
+.sub-menu a:hover {
+    color: #0869da;
+}
+.ad {
+    order: 1;
+    margin-top: 150px;
+}
+
+/* STORE
+-----------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------
+*/
+#store {
+    background-image: url(../images/menu-bg.png);
+    background-size: contain;  /* background-image には object-fit プロパティは直接適用できない　*/
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-position:top;
+}
+.store-content {
+    max-width: 1100px;
+    margin-top: 10%;
+    margin: 150px auto ;
+}
+.page-title_store {
+    text-align: justify;
+    font-weight: 900;
+    font-size: 5rem;
+}
+.store-content p {
+    font-size: 2rem;
+    margin: 10px 0 0;  /*margin:ここでは上 左右　下の順番で記述*/
+}
+.copy {
+    font-family: "Protest Riot", sans-serif;
+}
+.grid {
+    display: grid;
+    gap: 70px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 20%;
+    margin-bottom: 7%;
+}
+.item {
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+}
+.item:hover {
+    text-decoration: underline;
+}
+.store-button {
+    color: #ff5a00;
+    font-weight:100;
+    text-align:center;
+    margin-top: 5%;
+    margin-bottom: 7%;
+    text-decoration: none;
+}
+.store-button:hover {
+    color: #0869DA;
+    text-decoration: underline;
+}
+/* CONTACT
+-----------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------
+*/
+#contact {
+    background-image: url(../images/contact.jpg);
+    /*　background-size: cover;  /* background-image には object-fit プロパティは直接適用できない　*/
+    background-repeat: repeat;
+    /* background-position: center center;
+    background-position:top; */
+}
+/* HEADER */
+.page-header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: auto auto;
+    padding: 0 4%;
+}
+.main-nav-contact {
+    display: flex;
+    font-size: 0.85rem;
+    /* text-transform: uppercase; */
+    margin-top: 14px;
+    list-style: none;
+    color: #fff;
+}
+.main-nav-contact a {
+    color: #ffffff; /* テキストの色を白に設定 */
+}
+
+.li-contact {
+    color: #fff;
+    margin-left: 36px;
+}
+/* form */
+.contact-wrapper {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 0 4% 2%;
+    color: #fff;
+    background-color: rgba(255,255,255,.1)
+}
+.page-title {
+    font-weight: 750;
+}
+.contact-wrapper a {
+    color: #ffffff; /* テキストの色を白に設定 */
+}
+.submit-button {
+    font-size: 1.25rem;
+    background: #fff;
+    border-radius: 5px;
+    padding: 11px 20px;
+    border: solid;
+}
+.submit-button:hover {
+    background: #000;
+    color: #ffffff;
+}
+form div {
+    margin-bottom: 14px;
+}
+label {
+    font-size: 1.125rem;
+    margin-bottom: 10px;
+    display: block;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    background: rgba(255,255,255,.5);
+    border: 1px #000 solid;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    max-width: 240px;
+}
+textarea {
+    width: 100%;
+    max-width: 480px;
+    height: 6rem;
+}
+input[type="submit"] {
+    border: none;
+    cursor: pointer;
+    line-height: 1;
+}
+/* location
+------------------------------------------
+*/
+#location {
+    color: #fff;
+}
+.sub-title {
+    font-weight: 900;
+    border-bottom: 2px #fff solid;
+    margin: 20px auto;
+}
+#location {
+    padding: 4% 0;
+}
+#location .wrapper {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255,255,255,.1);
+    margin: 20px auto;
+    padding: 0 4% 2%;
+}
+.location-info {
+    width: 22%;
+}
+.location-info p {
+    padding: 12px 10px;
+}
+.location-map {
+    width: 74%;
+}
+/* sns
+------------------------------------------
+*/
+#sns {
+    color: #fff;
+}
+#sns .wrapper {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255,255,255,.1);
+}
+#sns .sub-title {
+    border-bottom: 2px #fff solid;
+    margin-top: 20px;
+    padding: 12px 10px;
+}
+
+
+/* メディアクエリー
+------------------------------------------ */
+@media (max-width: 600px) {
+    h1 {
+        color: #0bd;
+    }
+}
+/* モバイル版
+------------------------------------------ 
+------------------------------------------ 
+------------------------------------------ 
+------------------------------------------ 
+------------------------------------------ 
+------------------------------------------ 
+------------------------------------------ 
+------------------------------------------ 
+------------------------------------------ 
+*/
+@media (max-width: 600px) {
+    .page-title {
+        font-size: 2.5rem;
+    }
+    .page-header {
+        flex-direction: column;
+        align-items: center;
+    }
+    /* HEADER */
+    .main-nav {
+        font-size: 1.25rem;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+    .main-nav li {
+        margin: 0 20px;
+    }
+
+    /* HOME */
+    .big-bg {
+        margin-top: 0%;
+    }
+    .h2 {
+        margin-top: 100%;
+    }
+    .home-content {
+        margin-top: 50%;
+    }
+    /* NEWS */
+    .news-contents {
+        flex-direction: column;
+    }
+    article, 
+    aside {
+        width: 100%;
+    }
+    #news .page-title {
+        margin-top: 30px;
+    }
+    aside {
+        margin-top: 60px;
+    }
+    .post-info {
+        margin-bottom: 30px;
+    }
+    .post-date {
+        width: 70px;
+        height: 70px;
+        font-size: 1rem;
+    }
+    .post-date span {
+        font-size: 0.875rem;
+        padding-top: 2px;
+    }
+    .post-title {
+        font-size: 1.375rem;
+    }
+    .post-cat {
+        font-size: 0.875rem;
+        margin-top: 10px;
+    }
+    .post-title,
+    .post-cat {
+        margin-left: 80px;
+    }
+     /* MENU */
+     .menu-content {
+        margin-top: 30%;
+     }
+     .grid {
+        display: grid;
+        gap: 26px;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        margin-top: 6%;
+        margin-bottom: 50px;
+     }
+     /* CONTACT */
+    #contact .page-title {
+        margin-top: 40px;
+    }
+    /* form */
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        max-width: 100%;
+    }
+    /* 店舗情報・地図 / SNS */
+    #location .wrapper,
+    #sns .wrapper {
+        flex-direction: column;
+    }
+    .location-info,
+    .location-map,
+    .sns-box {
+        width: 100%;
+    }
+    .sns-box {
+        margin-bottom: 30px;
+    }
+}
